@@ -1,0 +1,847 @@
+body {
+	font-family: Franklin Gothic, sans-serif;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* NAVBAR */
+
+
+.navbar {
+	font-size: 1.1em;
+	background-color: white;
+	width: 100%;
+	margin-bottom: 10px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin: 0;
+	padding:0;
+}
+
+.logo img{
+	display: block;
+	margin: 10px;
+	width: 90px;
+}
+
+ul.meni{
+	display: flex;
+    align-items: center;
+	background: white;
+	height: 30px;
+	width: 90%;
+	top: 50px;
+}
+
+ul.meni > li{ 
+	display: inline;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+
+ul.meni ul{
+	list-style-type: none;
+    background: #999;
+    display: none;
+    position: absolute;
+}
+
+ul.meni li a{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	margin-left: 0px;
+	margin-right: 15px;
+}
+
+ul li .submenu{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	margin-left: 0px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+ul.meni li ul li a{
+	margin-left: -20px;
+}
+
+#aktivna {
+	color: #DCDCDC;
+}
+
+ul.meni li a:hover{
+	color: gray;
+}
+
+ul.meni li:hover ul{
+	display: block;
+	float: left;
+	background-color: white;
+	box-shadow: 2px 2px 6px;
+	margin-top: -15px;
+}
+
+
+/* BANNER */
+
+
+header.banner{
+	margin:0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 100%;
+	height: 500px;
+	background-size: auto;
+}
+
+/* INDEX BANNER */
+
+
+#index-0{
+	background-image: url("slike/index/index-banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+/* FOTO BANNER */
+
+
+#foto-1{
+	background-image: url("slike/foto/foto-banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+/* VIDEO BANNER */
+
+
+#video-2{
+	background-image: url("slike/video/video-banner.jpg");
+	background-position: right;
+}
+
+
+/* TISK BANNER */
+
+
+#tisk-3{
+	background-image: url("slike/tisk/tisk-banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#tisk-3 section{
+	background-color: black;
+	padding: 25px 50px;
+	border: 20px solid white;
+	box-shadow: 5px 5px 5px black;
+}
+
+/* UREJANJE BANNER */
+
+
+#urejanje-5{
+	background-image: url("slike/urejanje/urejanje-banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/* NAROČILA BANNER */
+
+
+#naročilo-4{
+	background-image: url("slike/narocilo/naročilo-banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/* GALERIJA BANNER */
+
+
+#galerija-6{
+	background-image: url("slike/galerija/galerija-banner.jpg");
+}
+
+
+/* OPREMA BANNER */
+
+
+#oprema-7{
+	background-image: url("slike/oprema/oprema-banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+/* O NAS BANNER */
+
+
+#o-nas-8{
+	background-image: url("slike/o-nas/o-nas-banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header.banner section{
+	margin: auto;
+	text-align: center;
+}
+
+header.banner section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;	
+	margin-left: 300px;
+}
+
+header.banner section h1{
+	color: white;
+	font-size: 2.4em;
+	text-transform: uppercase;
+}
+
+header.banner section p{
+	color: white;
+	font-size: 1.4em;	
+}
+
+
+/* 0 - index.html */
+/* FOTO/VIDEO/TISK */
+
+
+section.img-bes{
+	height: 500px;
+	padding: 15px 150px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+section.img-bes section{
+	width: 450px;
+	color: #DCDCDC;
+	text-align: justify;
+}
+section.img-bes section h1{
+	font-size: 1.8em;
+	text-transform: uppercase;
+}
+
+section.img-bes img{
+	width: 350px;
+	object-fit: cover;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* MNENJA */
+
+
+section.storitev{
+	padding: 15px 230px;
+}
+
+h1.storitve-naslov{
+	font-size: 1.8em;
+	text-transform: uppercase;
+	color:#DCDCDC;
+	text-align: center;
+}
+
+section.mnenja-okvir{
+	display: flex;
+	justify-content: space-around;
+}
+
+section.mnenja-okvir section {
+	padding: 5px;
+}
+
+section.mnenja-okvir section img{
+	width: 200px;
+}
+
+section.mnenja-opis{
+	width: 200px;
+	color: #DCDCDC;
+}
+
+section.mnenja-okvir section h1{
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color:#DCDCDC;
+	margin: 0;
+	padding-top: 5px;
+}
+
+section.mnenja-okvir section h2{
+	font-size: 1.1em;
+	text-transform: uppercase;
+	color:#DCDCDC;
+	margin: 0;
+	padding-top: 5px;
+}
+
+section.mnenja-okvir section p{
+	color: #DCDCDC;
+	text-align: justify;
+}
+
+
+/* PREDSTAVITEV */
+
+
+section.index-nas{
+	padding: 15px 350px;
+}
+
+h1.nas-naslov{
+	font-size: 1.8em;
+	text-transform: uppercase;
+	color:#DCDCDC;
+	text-align: center;
+}
+
+section.index-nas-okvirji{
+	color: #DCDCDC;
+	text-align: justify;
+	display: flex;
+	justify-content: space-around;
+}
+
+section.index-nas-okvirji section{
+	width: 500px;
+}
+
+section#ena{
+	flex: 2;
+}
+
+section#dva{
+	flex: 1;
+}
+
+section.nas-img{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section.nas-poravnava{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+section.bes{
+	text-align: justify;
+}
+
+section#dva img{
+	margin-top: 30px;
+}
+
+
+/* 1,2,3 - foto/video/tisk */
+
+
+/* PREDSTAVITVE */
+.storitve-pred h1{
+	color: #DCDCDC;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.storitve-pred{
+	color: #DCDCDC;
+	font-size: 1.1em;
+	padding: 15px 330px;
+	text-align: justify;
+}
+
+.bold-pred{
+	font-weight: bold;
+}
+
+
+
+/* FOTO / TISK STORITVE */
+
+
+section.storitev{
+	padding: 15px 230px;
+}
+
+h1.storitve-naslov{
+	font-size: 1.8em;
+	text-transform: uppercase;
+	color:#DCDCDC;
+	text-align: center;
+}
+
+section.storitve-okvir{
+	display: flex;
+	justify-content: space-around;
+}
+
+section.storitve-okvir section {
+	padding: 5px;
+}
+
+section.storitve-okvir section img{
+	width: 300px;
+}
+
+section.storitve-opis{
+	width: 300px;
+	color: #DCDCDC;
+}
+
+section.storitve-okvir section h1{
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color:#DCDCDC;
+	margin: 0;
+	padding-top: 5px;
+}
+
+section.storitve-okvir section p{
+	color: #DCDCDC;
+	text-align: justify;
+}
+section.storitev div{
+	text-align: center;
+	margin-top: 10px;
+}
+
+section.storitev div a{
+	text-decoration: none;
+	color: #DCDCDC;
+	margin-top: 25px;
+	padding: 5px;
+	border: 2px solid #DCDCDC;
+}
+
+
+/* VIDEO STORITVE */
+
+
+section.storitev-2{
+	padding: 15px 230px;
+}
+
+h1.storitve-naslov-2{
+	font-size: 1.8em;
+	text-transform: uppercase;
+	color:#DCDCDC;
+	text-align: center;
+}
+
+section.storitve-okvir-2{
+	display: flex;
+	justify-content: space-around;
+}
+
+section.storitve-okvir-2 section {
+	padding: 5px;
+}
+
+section.storitve-okvir-2 section img{
+	width: 550px;
+}
+
+section.storitve-opis-2{
+	width: 550px;
+	color: #DCDCDC;
+}
+
+section.storitve-okvir-2 section h1{
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color:#DCDCDC;
+	margin: 0;
+	padding-top: 5px;
+}
+
+section.storitve-okvir-2 section p{
+	color: #DCDCDC;
+	text-align: justify;
+}
+section.storitev-2 div{
+	text-align: center;
+	margin-top: 10px;
+}
+
+section.storitev-2 div a{
+	text-decoration: none;
+	color: #DCDCDC;
+	margin-top: 25px;
+	padding: 5px;
+	border: 2px solid #DCDCDC;
+}
+
+
+/* POVEZAVA */
+
+
+.storitve-povezava{
+	display: flex;
+	justify-content: center;
+	margin-top: 25px; 
+	margin-bottom: 25px;
+}
+
+.storitve-povezava a{
+	color: #DCDCDC;
+	text-decoration: none;
+	border: 2px solid #DCDCDC;
+	padding: 5px 15px;
+}
+
+.storitve-povezava a:hover{
+	background-color: #DCDCDC;
+	color: black;
+	text-decoration: none;
+	border: 2px solid black;
+	padding: 5px 15px;
+}
+
+
+/* POSTOPEK DELA */
+
+
+section.postopek{
+	padding: 15px 230px;
+}
+
+h1.postopek-naslov{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color:#DCDCDC;
+	text-align: left;
+}
+
+section.postopek ul{
+	color:#DCDCDC;
+	text-align: left;
+	list-style-type: upper-roman;
+
+}
+
+
+/* NAROČILA */
+/* TABELA */
+
+
+section.narocilo-sec{
+	display: flex;
+	flex-direction: column;
+}
+
+section.table{
+	display:flex;
+	justify-content: center;
+	margin: 35px;
+}
+
+div.table h1{
+	text-align: left;
+}
+
+table{ 
+	border: 2px solid #DCDCDC;
+	width: 50%;
+	color: #DCDCDC;
+	border-collapse: collapse;
+}
+th{ 
+	border: 2px solid #DCDCDC;
+	height: 30px;
+}
+
+td{ 
+	border: 2px solid #DCDCDC; 
+}
+
+table h1,h2{
+	margin: 15px 15px;
+	font-size: 1.7em;
+}
+
+
+/* PARAGRAPH */
+
+
+div.p{
+	color: #DCDCDC;;
+	display:flex;
+	justify-content: center;
+	margin: 35px 0px;
+}
+
+
+/* OBRAZEC */
+.form{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: #DCDCDC;
+}
+
+.center-form{
+	display: flex;
+	justify-content: center;
+}
+
+input, select, textarea{
+	margin-top: 6px;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=tel], select, textarea{
+	background-color: black;
+	border: 2px solid #DCDCDC;
+	color:#DCDCDC;
+}
+.submit{
+	display: flex;
+	justify-content: center;
+	margin: 25px;
+}
+
+button{
+	color: #DCDCDC;
+	background-color: black;
+	border: 2px solid #DCDCDC;
+}
+
+button:hover{
+	color: black;
+	background-color: #DCDCDC;
+	cursor: pointer;
+}
+
+
+/* GALERIJA */
+
+.galerija-slik{
+	padding: 35px 230px;
+}
+
+.navpično{
+	display: flex;
+	justify-content: space-around;
+}
+
+.navpično img{
+	width: 300px;
+	margin: 25px;
+	transition: transform 0.3s ease;
+	border: 5px ridge darkslategrey;
+	box-shadow: 5px 5px 5px rgb(17, 17, 17);
+}
+
+.vodoravno{
+	display: flex;
+	justify-content: space-around;
+}
+
+.vodoravno img{
+	width: 400px;
+	margin: 25px;
+	transition: transform 0.3s ease;
+	border: 5px ridge darkslategrey;
+	box-shadow: 5px 5px 5px rgb(17, 17, 17);
+}
+
+.galerija-slik img:hover {
+    transform: scale(1.5);
+}
+
+.galerija-video{
+	padding: 35px 230px;
+}
+
+.video{
+	display: flex;
+	justify-content: space-around;
+}
+
+.video iframe{
+	width: 400px;
+	margin: 25px;
+	border: 5px ridge darkslategrey;
+	box-shadow: 5px 5px 5px rgb(17, 17, 17);
+}
+
+
+/* OPREMA/O NAS */
+/* KAMERA/OBJEKTIVI */
+
+
+section.oprema-bes{
+	height: 450px;
+	padding: 5px 150px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+section.oprema-bes section{
+	width: 450px;
+	color: #DCDCDC;
+	text-align: justify;
+}
+section.oprema-bes section p{
+	margin-top: -15px;
+}
+section.oprema-bes section h1{
+	font-size: 1.8em;
+	text-transform: uppercase;
+}
+
+section.oprema-bes img{
+	width: 350px;
+	object-fit: cover;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* LOKACIJA */
+.o-nas-mapa{
+	margin: 35px 300px;
+}
+
+/* KONTAKT */
+.o-nas-kontakt{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: #DCDCDC;
+}
+
+.o-nas-kontakt p{
+	margin: 10px 15px;
+	font-style: italic;
+}
+
+/* SVG */
+svg{
+	width: 400px;
+}
+.cls-1 {
+	fill: #fff200;
+}
+
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+	stroke-width: 0px;
+}
+
+.cls-2 {
+	fill: #58595b;
+}
+
+.cls-3 {
+	fill: url(#linear-gradient);
+}
+
+.cls-4, .cls-8 {
+	fill: #231f20;
+}
+
+.cls-9 {
+	letter-spacing: -.02em;
+}
+
+.cls-5 {
+	fill: #414042;
+}
+
+.cls-10 {
+	stroke: #231f20;
+	stroke-width: 6px;
+}
+
+.cls-10, .cls-11 {
+	fill: none;
+	stroke-miterlimit: 10;
+}
+
+.cls-12 {
+	letter-spacing: 0em;
+}
+
+.cls-11 {
+	stroke: #6d6e71;
+	stroke-width: 5px;
+}
+
+.cls-6 {
+	fill: url(#linear-gradient-2);
+}
+
+.cls-7 {
+	fill: url(#linear-gradient-3);
+}
+
+.cls-13 {
+	letter-spacing: -.02em;
+}
+
+.cls-8 {
+	font-family: FranklinGothic-Medium, 'Franklin Gothic Medium';
+	font-size: 22.24px;
+	font-weight: 500;
+}
+
+.cls-14 {
+	mask: url(#mask);
+}
+
+.cls-15 {
+	letter-spacing: 0em;
+}
+
+.cls-16 {
+	filter: url(#luminosity-invert-noclip);
+}
+
+/* FOOTER */
+footer.footer div{
+	background-color: #DCDCDC;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+
+footer.footer div p{
+	margin: 25px 25px;
+}

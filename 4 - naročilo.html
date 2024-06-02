@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aperaturko: Naročilo</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="foto, video, tisk, kamera">
+	<meta name="description" content="Foto in video storitve.">
+	<meta name="author" content="Tim Novković">
+	<link rel="icon" href="slike/logo-bb.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar">
+		<a class="logo" href="index.html"><img src="slike/logo.png" alt="Aperaturko logotip"></a>
+		<ul class="meni">
+			<li><a href="index.html">Domov</a></li>
+			<li>
+				<p class="submenu">Storitve</p>
+				<ul>
+					<li><a href="1 - foto.html">Foto</a></li>
+					<li><a href="2 - video.html">Video</a></li>
+					<li><a href="3 - tisk.html">Tisk</a></li>
+					<li><a href="4 - naročilo.html" id="aktivna">Naročilo</a></li>
+					<li><a href="5 - urejanje.html">Urejanje</a></li>
+				</ul>
+			</li>
+			<li><a href="6 - galerija.html">Galerija</a></li>
+			<li><a href="7 - oprema.html">Oprema</a></li>
+			<li><a href="8 - o-nas.html">O nas</a></li>
+		</ul>
+	</nav>
+	
+	<!-- BANNER -->
+	
+	<header class="banner" id="naročilo-4">
+		<section>
+			<h1>Naročilo</h1>
+		</section>
+	</header>
+
+
+	<!-- OBRAZEC -->
+	<section class="form">
+		<section>
+			<h1 class="storitve-naslov">Naroči svojo sliko ali video</h1>
+		</section>
+		<section class="center-form">
+			<form action="obrazec.php" autocomplete="on">
+				* Ime: <input type="text" name="fname" required><br>
+				* Priimek: <input type="text" name="lname" required><br>
+				* E-pošta: <input type="email" name="email" autocomplete="off" required><br>
+				Tel.: <input type="tel" name="telefon" autocomplete="off"><br>
+				* Storitev: <select name="dan" size="1" required> 
+					<option value="" disabled selected>Izberi storitev...</option>
+					<option value="foto"> Fotografija </option>
+					<option value="video"> Video </option>
+					<option value="tisk"> Tisk </option>
+					<option value="urejanje"> Urejanje </option>
+				</select><br>
+				Druga storitev ( ni obvezno ): <select name="dan" size="1">
+					<option value="" disabled selected>Izberi drugo storitev...</option> 
+					<option value="foto"> Fotografija </option>
+					<option value="video"> Video </option>
+					<option value="tisk"> Tisk </option>
+					<option value="urejanje"> Urejanje </option>				
+				</select><br>
+				* Opis: <textarea name="opis" rows="5" cols="50">
+				</textarea><br>
+				<section class="submit">
+					<button type="submit"> Pošlji naročilo </button>
+				</section>
+			</form>
+		</section>
+	</section>
+
+	<!-- TABELA -->
+	<section class="narocilo-sec">
+		<section>
+			<h1 class="storitve-naslov">Cenik</h1>
+		</section>
+		<section class="table">
+			<table>
+				<thead>
+					<tr>
+						<th colspan="2"><h1>Storitev</h1></th>
+						<th rowspan="3" colspan="2"><h1>Cena</h1></th>
+					</tr>
+					<tr>
+						<th colspan="2"><h1>Fotografija</h1></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="2"><h2>Portreti</h2></th>
+					</tr>
+					<tr>
+						<td colspan="2">Portret</td><td>5,00€</td>
+					</tr>
+					<tr>
+						<td colspan="2">Skupinski portret</td><td>10,00€</td>
+					</tr>
+					<tr>
+						<td colspan="2">Portret hišnega ljubljenčka
+						</td><td>5,00€</td>
+					</tr>
+					<tr>
+						<td colspan="2"><h2>Prireditve</h2></th>
+					</tr>
+					<tr>
+						<td colspan="2">Portret</td><td>1200,00€</td>
+					</tr>
+					<tr>
+						<td colspan="2">Portret</td><td>1200,00€</td>
+					</tr>
+					<tr>
+						<td colspan="2">Portret</td><td>2000,00€</td>
+					</tr>
+					<tr>
+						<td colspan="2"><h2>Žurnalizem</h2></th>
+					</tr>
+					<tr>
+						<td colspan="2">Knjige</td><td>60,00€</td>
+					</tr>
+					<tr>
+						<td colspan="2">Revije</td><td>60,00€</td>
+					</tr>
+					<tr>
+						<td colspan="2">Splet</td><td>55,00€</td>
+					</tr>
+					<tr>
+						<td colspan="2"><h1>Videografija</h1></th>
+					</tr>
+					<tr>
+						<td colspan="2">Predstavitveni</td><td>od 100€ naprej</td>
+					</tr>
+					<tr>
+						<td colspan="2">Prodajni</td><td>od 500€ naprej</td>
+					</tr>
+					<tr>
+						<td colspan="2">Promocijski</td><td>od 450€ naprej</td>
+					</tr>
+					<tr>
+						<td colspan="2">TV reklama</td><td>od 500€ naprej</td>
+					</tr>
+					<tr>
+						<td colspan="2"><h1>Tisk</h1></th>
+					</tr>
+					<tr>
+						<td colspan="2">Papir</td><td>od 5€ naprej</td>
+					</tr>
+					<tr>
+						<td colspan="2">Platno</td><td>od 20€ naprej</td>
+					</tr>
+					<tr>
+						<td colspan="2">Kovinska plošča</td><td>od 20€ naprej</td>
+					</tr>
+					<tr>
+						<td colspan="2"><h1>Urejanje</h1></th>
+					</tr>
+					<tr>
+						<td><h2>Program</h2></td><td><h2>Kol.</h2></td>
+					</tr>
+					<tr>
+						<td  rowspan="3">Lightroom</td><td>1 - 2</td><td>3,00€</td>
+					</tr>
+					<tr>
+						<td>2 - 5</td><td>5,00€</td>
+					</tr>
+					<tr>
+						<td>5 - 10</td><td>8,00€</td>
+					</tr>
+					<tr>
+						<td  rowspan="3">Photoshop</td><td>1 - 2</td><td>5,00€</td>
+					</tr>
+					<tr>
+						<td>2 - 5</td><td>7,00€</td>
+					</tr>
+					<tr>
+						<td>5 - 10</td><td>10,00€</td>
+					</tr>
+					<tr>
+						<td></td><td><h2>Dol.</h2></td>
+					</tr>
+					<tr>
+						<td  rowspan="3">Premiere pro</td><td>30min</td><td>30,00€</td>
+					</tr>
+					<tr>
+						<td>60min</td><td>60,00€</td>
+					</tr>
+					<tr>
+						<td>90min</td><td>90,00€</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</section>
+
+	<!-- PARAGRAPH -->
+
+	<div class="p"><i>Cene se lahko spremenijo glede na težavnost ali dolžino dela</i></div>
+
+
+
+
+
+	<footer class="footer">
+		<div>
+			<p>© 2024 Aperaturko</p>
+		</div>
+	</footer>
+</body>
+</html>
